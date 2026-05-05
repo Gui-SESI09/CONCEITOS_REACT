@@ -6,7 +6,7 @@ import Usuario from './paginas/Usuario'
 
 function App() {
   const [tela, setTela] = useState('login')
-  
+
   const renderizarTela = () => {
     if (tela === 'login') {
       return <Login/>
@@ -28,6 +28,7 @@ function App() {
     <button onClick={ () => trocarTela('login')}>Login</button>
     <button onClick={ () => trocarTela('cadastro')}>Cadastro</button>
     <button onClick={ () => trocarTela('usuario')}>Usuario</button>
+    <hr/>
     {renderizarTela()}
     </>
   )
